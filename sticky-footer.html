@@ -29,7 +29,9 @@
 			<button class="button small azul" id="no-sticky">no sticky</button> , 
 			<button class="button small azul" id="only-flexbox">only flexbox</button> , 
 			<button class="button small azul" id="go-beyond">go beyond the fold</button> , 
-			<button class="button small azul" id="extend-color">extend color</button>
+			<button class="button small azul" id="extend-color">extend color</button>,
+			<button class="button small azul" id="extend-flexbox">extend color + flexbox</button>,
+			<button class="button small azul" id="beyond-flexbox">beyond the fold + flexbox</button>
 		</p>
 	</div>
 </div>
@@ -69,6 +71,12 @@ $( document ).ready(function() {
 	});
 	$('#extend-color').click(function(eve) {
 		setHtmlClass('sticky-footer extend');
+	});
+	$('#extend-flexbox').click(function(eve) {
+		setHtmlClass('sticky-footer extend w-flexbox');
+	});
+	$('#beyond-flexbox').click(function(eve) {
+		setHtmlClass('sticky-footer beyond-fold w-flexbox');
 	});
 
 

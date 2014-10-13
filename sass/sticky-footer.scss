@@ -3,15 +3,6 @@
 	body{
 		height: 100%;
 	}
-	&.w-flexbox{
-		body{
-			display: flex;
-			flex-direction: column;
-		}
-		.global-wrapper{
-			flex: 1;
-		}
-	}
 	&.beyond-fold{
 		.global-wrapper{
 			min-height:100%;
@@ -22,12 +13,26 @@
 				height: 50px;
 			}
 		}
+		&.w-flexbox{
+			.the-footer{
+				flex-shrink: 0;
+			}
+		}
+	}
+	&.w-flexbox{
+		body{
+			display: flex;
+			flex-direction: column;
+		}
+		.global-wrapper{
+			flex: 1;
+		}
 	}
 	&.extend{
 		body{
 			background: #333;
 		}
-		.main{
+		.global-wrapper{
 			background-color: white;
 		}
 	}
