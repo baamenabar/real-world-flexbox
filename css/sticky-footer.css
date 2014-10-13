@@ -20,6 +20,10 @@
   .sticky-footer.beyond-fold .global-wrapper {
     min-height: 100%;
     margin-bottom: -50px; }
+    .sticky-footer.beyond-fold .global-wrapper:after {
+      content: ' ';
+      display: block;
+      height: 50px; }
   .sticky-footer.extend body {
     background: #333; }
   .sticky-footer.extend .main {
