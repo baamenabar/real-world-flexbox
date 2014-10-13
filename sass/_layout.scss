@@ -1,0 +1,18 @@
+.the-header{
+	background-color: $brandColor;
+	color:black;
+}
+.the-footer{
+	background-color: $grisMasOscuro;
+	color:white;
+	a{
+		&:link, &:visited{
+			color:$amarillo;
+			text-decoration: underline;
+		}
+		&:hover, &:active{
+			color:white;
+			text-decoration: none;
+		}
+	}
+}

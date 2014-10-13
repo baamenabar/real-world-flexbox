@@ -1,9 +1,9 @@
 /*!relative path to source SCSS file: ../sass/styles.css */
 .brandColor {
-  color: #289B48; }
+  color: #45bcd2; }
 
 .brandColor-bg {
-  background-color: #289B48; }
+  background-color: #45bcd2; }
 
 .grisClaro {
   color: #D6D6D6; }
@@ -526,6 +526,9 @@ Otras clases de ayuda no-semántica (OHHHH el horroooor!)*/
   text-align: right; }
 
 /* márgenes rápidos */
+.mt0 {
+  margin-top: 0; }
+
 .mt1 {
   margin-top: 0.5em; }
 
@@ -537,6 +540,9 @@ Otras clases de ayuda no-semántica (OHHHH el horroooor!)*/
 
 .mt4 {
   margin-top: 2em; }
+
+.mb0 {
+  margin-bottom: 0; }
 
 .mb1 {
   margin-bottom: 0.5em; }
@@ -550,6 +556,9 @@ Otras clases de ayuda no-semántica (OHHHH el horroooor!)*/
 .mb4 {
   margin-bottom: 2em; }
 
+.ml0 {
+  margin-left: 0; }
+
 .ml1 {
   margin-left: 0.5em; }
 
@@ -561,6 +570,9 @@ Otras clases de ayuda no-semántica (OHHHH el horroooor!)*/
 
 .ml4 {
   margin-left: 2em; }
+
+.mr0 {
+  margin-right: 0; }
 
 .mr1 {
   margin-right: 0.5em; }
@@ -1223,6 +1235,20 @@ form > ul, fieldset > ul, .tipoForm > ul {
     width: 96%;
     margin-left: 1%;
     padding: 4px 1%; } }
+
+.the-header {
+  background-color: #45bcd2;
+  color: black; }
+
+.the-footer {
+  background-color: #333333;
+  color: white; }
+  .the-footer a:link, .the-footer a:visited {
+    color: #fcd700;
+    text-decoration: underline; }
+  .the-footer a:hover, .the-footer a:active {
+    color: white;
+    text-decoration: none; }
 
 .wrapper {
   max-width: 960px;

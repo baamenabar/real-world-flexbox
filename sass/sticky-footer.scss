@@ -1,0 +1,29 @@
+.sticky-footer{
+	height:100%;
+	body{
+		height: 100%;
+	}
+	&.w-flexbox{
+		body{
+			display: flex;
+			flex-direction: column;
+		}
+		.global-wrapper{
+			flex: 1;
+		}
+	}
+	&.beyond-fold{
+		.global-wrapper{
+			min-height:100%;
+			margin-bottom: -50px;
+		}
+	}
+	&.extend{
+		body{
+			background: #333;
+		}
+		.main{
+			background-color: white;
+		}
+	}
+}
