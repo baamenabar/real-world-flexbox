@@ -1,0 +1,32 @@
+{
+  "name": "real-world-flexbox",
+  "version": "0.9.0",
+  "description": "Real world examples for enhancing layout with flexbox.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/baamenabar/real-world-flexbox.git"
+  },
+  "keywords": [
+    "css",
+    "sass",
+    "flexbox",
+    "layout"
+  ],
+  "author": "B. Agustín Amenabar L.",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/baamenabar/real-world-flexbox/issues"
+  },
+  "homepage": "https://github.com/baamenabar/real-world-flexbox",
+  "devDependencies": {
+    "gulp-livereload": "~2.1.0",
+    "gulp-minify-css": "~0.3.7",
+    "gulp-sass": "~0.7.2",
+    "gulp": "~3.8.7",
+    "gulp-autoprefixer": "0.0.8"
+  }
+}

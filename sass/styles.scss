@@ -1,0 +1,28 @@
+/*!relative path to source SCSS file: ../sass/styles.css */
+
+@import "brand";// ←---Here be vars
+@import "normalize";
+@import "mejoras-1";
+@import "mejoras-2";
+@import "mejoras-3";
+
+$gridGutter:16px;
+$anchoDefault:960px;
+$anchoWide:1140px;
+$anchoMinimo:776px;
+
+@import "simplegrid";
+@import "forms";
+
+
+.wrapper{
+	max-width: $anchoDefault;
+	margin: 0 auto;
+	&.wide{
+		max-width: $anchoWide;
+	}	
+}
+
+@media print {
+	
+}
