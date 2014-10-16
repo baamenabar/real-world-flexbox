@@ -1,34 +1,38 @@
-.sticky-footer {
+html, body {
   height: 100%; }
-  .sticky-footer body {
-    height: 100%; }
-  .sticky-footer.beyond-fold .global-wrapper {
-    min-height: 100%;
-    margin-bottom: -50px; }
-    .sticky-footer.beyond-fold .global-wrapper:after {
-      content: ' ';
-      display: block;
-      height: 50px; }
-  .sticky-footer.beyond-fold.w-flexbox .the-footer {
-    -webkit-flex-shrink: 0;
-        -ms-flex-negative: 0;
-            flex-shrink: 0; }
-  .sticky-footer.w-flexbox body {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column; }
+
+.sticky-footer.beyond-fold .global-wrapper {
+  min-height: 100%;
+  margin-bottom: -50px; }
+  .sticky-footer.beyond-fold .global-wrapper:after {
+    content: ' ';
+    display: block;
+    height: 50px; }
+.sticky-footer.beyond-fold.w-flexbox .the-footer {
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0; }
+.flexbox .sticky-footer.beyond-fold.w-flexbox .global-wrapper, .flexboxlegacy .sticky-footer.beyond-fold.w-flexbox .global-wrapper {
+  min-height: 0;
+  margin-bottom: 0; }
+  .flexbox .sticky-footer.beyond-fold.w-flexbox .global-wrapper:after, .flexboxlegacy .sticky-footer.beyond-fold.w-flexbox .global-wrapper:after {
+    content: none; }
+.sticky-footer.w-flexbox {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column; }
   .sticky-footer.w-flexbox .global-wrapper {
     -webkit-box-flex: 1;
     -webkit-flex: 1;
         -ms-flex: 1;
             flex: 1; }
-  .sticky-footer.extend body {
-    background: #333; }
+.sticky-footer.extend {
+  background: #333; }
   .sticky-footer.extend .global-wrapper {
     background-color: white; }

@@ -1,8 +1,7 @@
-.sticky-footer{
+html, body{
 	height:100%;
-	body{
-		height: 100%;
-	}
+}
+.sticky-footer{
 	&.beyond-fold{
 		.global-wrapper{
 			min-height:100%;
@@ -17,21 +16,28 @@
 			.the-footer{
 				flex-shrink: 0;
 			}
+			.flexbox &,
+			.flexboxlegacy &
+			{
+				.global-wrapper{
+					min-height: 0;
+					margin-bottom: 0;
+					&:after{
+						content: none;
+					}
+				}	
+			}
 		}
 	}
 	&.w-flexbox{
-		body{
-			display: flex;
-			flex-direction: column;
-		}
+		display: flex;
+		flex-direction: column;
 		.global-wrapper{
 			flex: 1;
 		}
 	}
 	&.extend{
-		body{
-			background: #333;
-		}
+		background: #333;
 		.global-wrapper{
 			background-color: white;
 		}
